@@ -21,10 +21,8 @@ function showCountriesList(resp) {
 function showCountriesList(resp) {
     countriesList.empty();
     resp.forEach(function(item) {
-        resp.forEach(function(item) {
-            $('<li style="color: #1b0aff;">').text("Country: " + item.name).appendTo(countriesList);
-            $('<li style="color: #a75656;">').text("Capital: " + item.capital).appendTo(countriesList);
-            $('<li style="color: #14a921;">').text("Region: " + item.region).appendTo(countriesList);
-        });
+        $('<li style="color: #1b0aff;">').text("Country: " + item.name).appendTo(countriesList);
+        $('<li style="color: #a75656;">').text("Capital: " + item.capital).appendTo(countriesList);
+        $('<li style="color: #14a921;">').text("Region: " + item.region).appendTo(countriesList);
     });
 }
